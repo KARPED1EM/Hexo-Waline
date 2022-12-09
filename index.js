@@ -1,6 +1,6 @@
 const Application = require('@waline/vercel');
 
-Waline.init({
+Application.init({
   el: '#waline',
   search: false,
   emoji: [
@@ -10,7 +10,6 @@ Waline.init({
       '//npm.elemecdn.com/waline-magic@latest/Menhera-chan',
     ],
 });
-
 
 module.exports = Application({
   async postSave(comment) {
